@@ -1,0 +1,28 @@
+.headerContent {
+  position: relative;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.headerContent::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.60;
+  background-image: url("/src/assets/background.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.textOverlay {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
